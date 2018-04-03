@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyDictK</string>
+    <string name="myAlphaNumeric">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"'"</string>
+    <string name="header_name">MyDict Kotlin Full Edition</string>
+    <string name="vocab_editText_hint">Don\'t Fool Yourself.</string>
+    <string name="search_button">SEARCH</string>
+    <string name="add_button">ADD</string>
+    <string name="recent_button">RECENT</string>
+    <string name="alphabet_button">ALPHABET</string>
+
+</resources>

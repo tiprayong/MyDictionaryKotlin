@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.comtip.tip.mydictk.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="@string/header_name"
+        android:textSize="12sp"
+        android:id="@+id/backupTV"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/vocab_editText_hint"
+        android:id="@+id/vocabET"
+        android:gravity="center_horizontal"
+        android:inputType="textFilter"
+        android:digits="@string/myAlphaNumeric"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/searchBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:text="@string/search_button"
+            android:background="@drawable/button_shape"
+            android:layout_margin="4sp"
+            />
+
+        <Button
+            android:id="@+id/addBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@android:drawable/ic_menu_add"
+            android:text="@string/add_button"
+            android:background="@drawable/button_shape"
+            android:layout_margin="4sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8sp"
+        >
+        <Button
+            android:id="@+id/recentBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@android:drawable/ic_menu_recent_history"
+            android:text="@string/recent_button"
+            android:background="@drawable/button_shape"
+            android:layout_margin="4sp"
+            />
+        <Button
+            android:id="@+id/alphabetBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@android:drawable/ic_menu_sort_alphabetically"
+            android:text="@string/alphabet_button"
+            android:background="@drawable/button_shape"
+            android:layout_margin="4sp"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vocabRV"
+        />
+
+
+</LinearLayout>
